@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
-class LoginPage:
+class SauceDemo:
     def __init__(self):
         self.driver = webdriver.Chrome('C:\chromedriver-win32\chromedriver.exe')
         self.driver.get('https://www.saucedemo.com')
@@ -66,5 +66,5 @@ class LoginPage:
         self.driver.find_element(By.ID, 'checkout_complete_container').is_displayed()
 
 
-LoginPage().positive_case()
+SauceDemo().positive_case()
 time.sleep(0.5)
