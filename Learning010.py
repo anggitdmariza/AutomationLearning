@@ -8,7 +8,7 @@ import time
 
 class SauceDemo:
     def __init__(self):
-        self.driver = webdriver.Chrome('C:\chromedriver-win32\chromedriver.exe')
+        self.driver = webdriver.Chrome('C:/chromedriver-win32/chromedriver.exe')
         self.driver.get('https://www.saucedemo.com')
         actual_title = self.driver.title
         expected_title = 'Swag Labs'
